@@ -1,0 +1,44 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+
+  <display-name>Archetype Created Web Application</display-name>
+
+  <filter>
+    <filter-name>filter1</filter-name>
+    <filter-class>com.java.servletPractise.FormExample</filter-class>
+  </filter>
+
+
+  <filter-mapping>
+    <filter-name>filter1</filter-name>
+    <url-pattern>/*/</url-pattern>
+  </filter-mapping>
+
+
+  <servlet>
+    <servlet-name>HelloServlet</servlet-name>
+    <servlet-class>com.java.servletPractise.ServletExample</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>HelloServlet</servlet-name>
+    <url-pattern>/helloworld/</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>HelloServlet</servlet-name>
+    <url-pattern>/hello/register</url-pattern>
+  </servlet-mapping>
+
+  <welcome-file-list>
+    <welcome-file>register.html</welcome-file>
+  </welcome-file-list>
+
+
+
+
+
+</web-app>
